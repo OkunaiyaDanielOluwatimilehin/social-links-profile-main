@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    background-color: hsl(0, 0%, 8%);
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    width: 20%;
+    min-height: 70vh;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 15px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 70px;
+    justify-content: center;
+    filter: grayscale(0);
+}
+
+.img:hover {
+    filter: grayscale(100);
+    transform: scale(1.1); /* Use transform for scaling */
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.center h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.center h2 {
+    color: hsl(75, 94%, 57%);
+    opacity: 0.75; /* Use opacity for text opacity */
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.center h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 12%);
+    padding: 8px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: none;
+    border: none;
+    width: 300px;
+    height: 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+}
